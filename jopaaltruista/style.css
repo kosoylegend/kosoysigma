@@ -1,0 +1,39 @@
+/* Общие стили меню */
+.menu {
+    background: #333; /* Цвет фона */
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Горизонтальное меню */
+    justify-content: center; /* Центрируем пункты */
+    gap: 20px; /* Расстояние между пунктами */
+}
+
+.menu a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s; /* Плавное изменение фона */
+}
+
+.menu a:hover {
+    background: #575757; /* Цвет фона при наведении */
+}
+
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column; /* Вертикальное меню */
+        align-items: center;
+    }
+}
+
+.menu .active {
+    background: #4CAF50; /* Зелёный фон для активной страницы */
+}
+
